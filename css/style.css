@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* Обычный */
+@font-face {
+  font-family: "CharterITC";
+  src: url(/fonts/CharterITC_Regular.ttf);
+}
+body .regular {
+  color: #272B33;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

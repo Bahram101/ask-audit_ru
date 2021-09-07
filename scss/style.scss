@@ -1,0 +1,31 @@
+/* Обычный */
+@font-face {
+	font-family: 'CharterITC'; 
+	src: url(/fonts/CharterITC_Regular.ttf); 
+}
+ 
+
+$btnYellow : #FFE14A;
+$hoverBtnYellow: #FFF0A1;
+$clickBtnYellow: #FFC122;
+
+$hoverBtnWhite: #C9CACC;
+$clickBtnWhite: #939599;
+
+$mainBlue: #001B7B;
+$textColor: #272B33;
+$hoverText: #2F80ED;
+
+@mixin font($textColor, $fontSize: 16px) {
+    color: $textColor;
+    font-size: $fontSize;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body{
+    .regular{
+        @include font()
+    }
+    
+}
