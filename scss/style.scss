@@ -23,9 +23,3 @@ $hoverText: #2F80ED;
     text-transform: uppercase;
 }
 
-body{
-    .regular{
-        @include font()
-    }
-    
-}
