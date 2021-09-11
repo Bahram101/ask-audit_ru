@@ -1,25 +1,62 @@
-/* Обычный */
+/* oswald-regular - latin */
 @font-face {
-	font-family: 'CharterITC'; 
-	src: url(/fonts/CharterITC_Regular.ttf); 
+  font-family: 'ITC Charter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/charteritc.eot'),
+       url('../fonts/charteritc.woff') format('woff'), 
+       url('../fonts/charteritc.ttf') format('svg');
 }
- 
 
-$btnYellow : #FFE14A;
-$hoverBtnYellow: #FFF0A1;
-$clickBtnYellow: #FFC122;
 
-$hoverBtnWhite: #C9CACC;
+@font-face {
+  font-family: "Conv_charteritc-bold";
+  src: url("../fonts/charteritc-bold.eot");
+  src: local("☺"), 
+    url("../fonts/charteritc-bold.woff") format("woff"),
+    url("../fonts/charteritc-bold.ttf") format("truetype"),
+    url("../fonts/charteritc-bold.svg") format("svg");
+  font-weight: 700;
+}
+
+
+$btnYellow: #ffe14a;
+$hoverBtnYellow: #fff0a1;
+$clickBtnYellow: #ffc122;
+
+$hoverBtnWhite: #c9cacc;
 $clickBtnWhite: #939599;
 
-$mainBlue: #001B7B;
-$textColor: #272B33;
-$hoverText: #2F80ED;
+$mainBlue: #001b7b;
+$textColor: #272b33;
+$hoverText: #2f80ed;
 
-@mixin font($textColor, $fontSize: 16px) {
-    color: $textColor;
-    font-size: $fontSize;
-    font-weight: bold;
-    text-transform: uppercase;
+$openSans: Open Sans, sans-serif;
+$charter: CharterITC;
+$robotoSlab: Roboto Slab;
+$fontFamily: $openSans;
+
+@mixin mainFonts(
+  $color: green,
+  $fontSize: 16px,
+  $fontWeight: normal,
+  $textTransform: none,
+  $fontFamily: openSans
+) {
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  text-transform: $textTransform;
+  font-family: $fontFamily;
 }
 
+body {
+  .lorem {
+    @include mainFonts($mainBlue, 26px, bold, uppercase, "ITC Charter");
+  }
+}
+body {
+  .lorem2 {
+    @include mainFonts($mainBlue, 26px, bold, uppercase, "Conv_charteritc-bold");
+  }
+}
