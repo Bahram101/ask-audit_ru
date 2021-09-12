@@ -1,31 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" /> -->
     <title>ask-audit.ru</title>
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+            rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
-      rel="stylesheet"
+            rel="stylesheet"
+            href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <!-- <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" /> -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="lorem">Аудиторские услуги</div>
-    <div class="lorem2">Аудиторские услуги</div>
-  </body>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__top">
+            <div class="container header__container  d-flex justify-content-between align-items-center">
+                <div class="header__top-left d-flex align-items-center">
+                    <div class="menu-burger">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="burger h-6 w-6"
+                                width="33"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                        >
+                            <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                            />
+                        </svg>
+                    </div>
+                    <a href="#" class="logo-link"
+                    ><img
+                            src="img/logo.png"
+                            alt="логотип"
+                            width="110"
+                    /></a>
+                </div>
+                <div class="header__top-right d-flex align-items-center">
+                    <a href="tel:8 843 207 01 15" class="header__phone"
+                    >8 843 207 01 15</a
+                    >
+                    <a
+                            href="mailto:anetcomp@yandex.ru"
+                            class="header__email"
+                    >anetcomp@yandex.ru</a
+                    >
+                    <a href="#" class="header__instaIcon"
+                    ><img src="img/instagram.svg" width="27" alt=""
+                    /></a>
+                </div>
+            </div>
+        </div>
+        <div class="header__content">
+            <!--<div class="header-overlay">-->
+                <div class="container">
+                    <div class="header__content-text">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>АУДИТОРСКИЕ И ЮРИДИЧЕСКИЕ УСЛУГИ</h4>
+                                <h1>Мы оказываем сильную <br>и надежную поддержку вашему бизнесу </h1>
+                            </div>
+                            <div class="col-md-6 yellowBlock"></div>
+                        </div>
+                    </div>
+                </div>
+            <!--</div>-->
+        </div>
+    </header>
+
+    <section class="section services">
+        <div class="container">
+            <h2 class="section__title services__title">
+                В чем мы сильны или чем специалисты <br>компании могут быть полезны
+            </h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section__item services-item">
+                        <div class="section__item-header">
+                            <div class="section__item-title">Аудиторские услуги</div>
+                            <div class="section__item-subtitle">Аудиторские услуги нужны всегда и везде!</div>
+                        </div>
+                        <div class="section__item-body">
+                            <ul>
+                                <li>Обязательный аудит за вашу стоимость</li>
+                                <li>Инициативный аудит</li>
+                                <li>Налоговый аудит</li>
+                                <li>Экспресс-аудит от 9 500 руб.</li>
+                                <li>Кадровый аудит</li>
+                            </ul>
+                        </div>
+                        <div class="section__item-footer d-flex">
+                            <a href="#" class="section__btn-detail btn btn-outline-secondary">Подробнее</a>
+                            <form action="#" method="post" class="section__form d-flex">
+                                <input type="text" placeholder="Ваш номер">
+                                <button type="submit">Звонок специалисту</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section__item services-item">
+                        <div class="section__item-header">
+                            <div class="section__item-title">Аудиторские услуги</div>
+                            <div class="section__item-subtitle">Аудиторские услуги нужны всегда и везде!</div>
+                        </div>
+                        <div class="section__item-body">
+                            <ul>
+                                <li>Обязательный аудит за вашу стоимость</li>
+                                <li>Инициативный аудит</li>
+                                <li>Налоговый аудит</li>
+
+                            </ul>
+                        </div>
+                        <div class="section__item-footer d-flex">
+                            <a href="#" class="section__btn-detail btn btn-outline-secondary">Подробнее</a>
+                            <form action="#" method="post" class="section__form d-flex">
+                                <input type="text" placeholder="Ваш номер">
+                                <button type="submit">Звонок специалисту</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
 </html>
