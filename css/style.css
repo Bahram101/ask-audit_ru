@@ -106,21 +106,22 @@ body {
 }
 
 .section {
-  padding-top: 65px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .section h2 {
   font-size: 34px;
-  margin-bottom: 45px;
+  margin-bottom: 60px;
   text-align: center;
 }
 .section .section__item {
-  background-image: url(../img/desktop/01.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: auto;
   border-radius: 150px 0 150px 0;
   border: 3px solid #ffe14a;
   padding: 52px 40px;
+  margin-bottom: 40px;
 }
 .section .section__item .section__item-header {
   text-align: center;
@@ -131,12 +132,16 @@ body {
   font-family: CharterBold;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .section .section__item .section__item-header .section__item-subtitle {
   color: #272b33;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   margin-bottom: 30px;
+  text-align: left;
+  margin-left: 3px;
+  line-height: 30px;
 }
 .section .section__item .section__item-body {
   margin-bottom: 35px;
@@ -199,4 +204,144 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
+}
+.section .auditingServices {
+  background-image: url(../img/desktop/01.png);
+}
+.section .countingServices {
+  background-image: url(../img/desktop/02.png);
+}
+.section .testingServices {
+  background-image: url(../img/desktop/03.png);
+}
+.section .legalServices {
+  background-image: url(../img/desktop/04.png);
+}
+.section .economicExpertise {
+  background-image: url(../img/desktop/05.png);
+}
+.section .appraisalServices {
+  background-image: url(../img/desktop/06.png);
+}
+
+.ourExperts {
+  background: #001b7b;
+  color: white;
+}
+.ourExperts .expert-title {
+  color: #ffe14a;
+}
+.ourExperts .expert-item .expert-img {
+  border-radius: 3px;
+}
+.ourExperts .expert-item .expert-body .expert__body-title {
+  text-align: center;
+}
+.ourExperts .expert-item .expert-body .expert-speciality {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #ffe14a;
+}
+
+.contact .contact-img {
+  width: 100%;
+}
+.contact .contact__info {
+  padding: 50px 75px 34px 65px;
+  border: 3px solid #ffe14a;
+  border-radius: 150px 0 150px 0;
+}
+.contact .contact__info .contact__info-item {
+  margin-bottom: 25px;
+}
+.contact .contact__info .contact__info-item .info__item-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+.contact .contact__info .contact__info-item .info__item-top img {
+  width: 40px;
+}
+.contact .contact__info .contact__info-item .info__item-top h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: CharterBold;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.contact .contact__info .contact__info-item p {
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.contact .contact__info .info__item-phone {
+  -webkit-transform: translateX(-8px);
+          transform: translateX(-8px);
+}
+.contact .contact__info .info__item-phone h3 {
+  margin-left: 2px !important;
+}
+
+.footer {
+  background: #001b7b;
+  color: white;
+  padding: 55px;
+  font-family: "Open Sans", sans-serif;
+}
+.footer .footer__logo {
+  width: 120px;
+  margin-bottom: 30px;
+}
+.footer .footer__logo img {
+  width: 100%;
+}
+.footer .confidentiality img, .footer .confidentiality a {
+  margin-right: 20px;
+}
+.footer .confidentiality .insta {
+  width: 27px;
+}
+.footer .copyright {
+  margin-top: 35px;
+}
+.footer .firstBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .services h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer .services ul li {
+  margin-bottom: 15px;
+  line-height: 30px;
+  position: relative;
+}
+.footer .services ul li:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  left: -16px;
+  top: 13px;
+  position: absolute;
+}
+.footer .about ul li {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
