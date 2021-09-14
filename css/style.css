@@ -44,6 +44,28 @@ a:hover {
   font-weight: 600;
 }
 
+form.section__form input {
+  border: none;
+  border-bottom: 1px solid #272b33;
+  width: 120px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+  outline: none;
+  background: transparent;
+}
+form.section__form .yellowBtn {
+  border: none;
+  padding: 13px 15px;
+  border-radius: 5px;
+  background: #ffe14a;
+  color: #272b33;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 body {
   font-family: Charter;
   color: #272b33;
@@ -196,7 +218,7 @@ body {
           box-shadow: none;
   background: #939599;
 }
-.section .section__item form input {
+.section .section__item form.section__form input {
   border: none;
   border-bottom: 1px solid #272b33;
   width: 120px;
@@ -206,7 +228,7 @@ body {
   margin-right: 20px;
   outline: none;
 }
-.section .section__item form .yellowBtn {
+.section .section__item form.section__form .yellowBtn {
   border: none;
   padding: 13px 15px;
   border-radius: 5px;
@@ -333,6 +355,42 @@ body {
   top: 14px;
   border-radius: 50%;
   background: #272b33;
+}
+
+.audit {
+  padding-bottom: 0;
+}
+.audit .audit__top {
+  background: #001b7b;
+  padding: 37px;
+  border-radius: 170px 0 170px 0;
+  margin-bottom: 75px;
+}
+.audit .audit__top img {
+  width: 80%;
+  border-radius: 150px 0 150px 0;
+}
+.audit .audit__top .audit__top-heading {
+  font-size: 42px;
+  color: white;
+  text-transform: uppercase;
+  padding-right: 1000px;
+}
+.audit .audit__bottom .audit__bottom-text {
+  color: #272b33;
+  font-family: "Open Sans", sans-serif;
+  line-height: 30px;
+  font-weight: 600;
+}
+.audit .audit__bottom .audit__bottom-form h3 {
+  font-size: 26px;
+  font-family: CharterBold;
+  text-transform: uppercase;
+  margin-bottom: 38px;
+}
+.audit .audit__bottom .audit__bottom-form .audit-form input {
+  margin-left: 0;
+  width: 150px;
 }
 
 .footer {
