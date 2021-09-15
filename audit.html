@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -99,6 +100,22 @@
             </div>
         </div>
     </section>
+
+
+    <section class="stock">
+        <div class="stocks d-flex">
+            <div class="stock-item">Акция</div>
+            <div class="stock-item">Акция</div>
+            <div class="stock-item">Акция</div>
+            <div class="stock-item">Акция</div>
+            <div class="stock-item">Акция</div>
+            <div class="stock-item">Акция</div>
+        </div>
+        <div class="credits owl-carousel owl-theme d-flex">
+            <div class="credit">Аудит в кредит</div>
+        </div>
+    </section>
+
 
     <section class="section contact">
         <div class="container">
@@ -197,6 +214,25 @@
             </div>
         </div>
     </footer>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.credits').owlCarousel({
+                center: true,
+                items:2,
+                loop:true,
+                margin:10,
+                responsive:{
+                    600:{
+                        items:4
+                    }
+                }
+            });
+        });
+
+    </script>
 </div>
 </body>
 </html>

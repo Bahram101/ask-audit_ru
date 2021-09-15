@@ -357,9 +357,6 @@ body {
   background: #272b33;
 }
 
-.audit {
-  padding-bottom: 0;
-}
 .audit .audit__top {
   background: #001b7b;
   padding: 37px;
@@ -391,6 +388,22 @@ body {
 .audit .audit__bottom .audit__bottom-form .audit-form input {
   margin-left: 0;
   width: 150px;
+}
+
+.stock {
+  background: #001b7b;
+  padding: 50px 0;
+}
+.stock .stocks {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+}
+.stock .credits {
+  font-size: 43px;
+  color: #ffe14a;
+  text-transform: uppercase;
 }
 
 .footer {
