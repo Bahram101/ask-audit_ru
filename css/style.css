@@ -422,7 +422,6 @@ body {
   font-size: 42px;
   color: white;
   text-transform: uppercase;
-  padding-right: 100px;
 }
 .audit .audit__bottom .audit__bottom-text,
 .banners .audit__bottom .audit__bottom-text {
@@ -431,9 +430,12 @@ body {
   line-height: 30px;
   font-weight: 600;
 }
+.audit .audit__bottom .audit__bottom-form,
+.banners .audit__bottom .audit__bottom-form {
+  font-size: 26px;
+}
 .audit .audit__bottom .audit__bottom-form h3,
 .banners .audit__bottom .audit__bottom-form h3 {
-  font-size: 26px;
   font-family: CharterBold;
   text-transform: uppercase;
   margin-bottom: 38px;
@@ -561,6 +563,14 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .audit__top img {
+    margin-bottom: 30px !important;
+  }
+
+  .audit__bottom .audit__bottom-text {
+    padding-bottom: 35px !important;
+  }
+
   .footer .row.copyright {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -618,6 +628,38 @@ body {
   }
 }
 @media (max-width: 575px) {
+  .contact__info {
+    border-radius: 4px !important;
+  }
+
+  .audit__top {
+    border-radius: 4px !important;
+  }
+  .audit__top img {
+    border-radius: 4px !important;
+    width: 100% !important;
+  }
+
+  .audit__bottom-form .audit-form {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .audit__bottom-form .audit-form input {
+    padding: 10px 0 !important;
+    margin-bottom: 20px !important;
+    width: 100% !important;
+  }
+
+  .countingServices {
+    width: 100% !important;
+  }
+
+  .section__title {
+    font-size: 28px !important;
+  }
+
   .header__content-text h1 {
     font-size: 34px !important;
   }
@@ -638,6 +680,9 @@ body {
   .section__item {
     border-radius: 4px !important;
     background-size: 180px !important;
+  }
+  .section__item .section__item-title {
+    font-size: 22px !important;
   }
   .section__item .section__item-footer {
     -webkit-box-orient: vertical !important;
@@ -706,7 +751,19 @@ body {
     background-size: 260px !important;
   }
 
+  .contact .col-md-5.mb {
+    margin-bottom: 50px !important;
+  }
+
   .footer {
     padding: 25px !important;
+  }
+  .footer .confidentiality {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .footer .confidentiality .instaIconFooter {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
   }
 }
