@@ -626,17 +626,16 @@ body {
 
 //MD
 
-@media(max-width: 991px) {
-	
+@media (max-width: 991px) {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-	.header__content-text{
-		h1{
+	.header__content-text {
+		h1 {
 			font-size: 38px;
 		}
 	}
-	
+
 	.countingServices {
 		width: 100% !important;
 		height: 280px !important;
@@ -653,10 +652,7 @@ body {
 			bottom: -55px !important;
 		}
 	}
-	
-	
 }
-
 
 //SM
 @media (max-width: 767px) {
@@ -675,40 +671,39 @@ body {
 					position: relative !important;
 				}
 			}
-		}		
+		}
 	}
 	.yellowBlock {
 		display: none !important;
 	}
 }
 @media (min-width: 576px) and (max-width: 767px) {
-	.header__top{
-		.header__top-right{
+	.header__top {
+		.header__top-right {
 			flex-direction: column !important;
-			a{
-				border-right:none !important;
+			a {
+				border-right: none !important;
 			}
-			.header__instaIcon{
+			.header__instaIcon {
 				position: relative !important;
-				top:-24px !important;
+				top: -24px !important;
 			}
-			.header__email{
+			.header__email {
 				position: relative !important;
 				right: -56px !important;
 				bottom: -7px !important;
 			}
-			.header__phone{
+			.header__phone {
 				position: relative;
 				right: -15px;
 			}
-			
 		}
 	}
-	.header__content-text{
-		h1{
+	.header__content-text {
+		h1 {
 			font-size: 34px !important;
 		}
-		h4{
+		h4 {
 			font-size: 18px !important;
 		}
 	}
@@ -719,33 +714,31 @@ body {
 	}
 }
 
-
-
 //XS
 @media (max-width: 575px) {
-	.header__content-text{
-		h1{
+	.header__content-text {
+		h1 {
 			font-size: 34px !important;
 		}
-		h4{
+		h4 {
 			font-size: 18px !important;
 		}
 	}
-	.header__top{
-		.header__top-right{
+	.header__top {
+		.header__top-right {
 			display: none !important;
-			
 		}
-		.header__top-left{
+		.header__top-left {
 			justify-content: space-between !important;
 			width: 100% !important;
 		}
 	}
-	.section__item{
+	.section__item {
 		border-radius: 4px !important;
-		.section__item-footer{
+		background-size: 180px !important ;
+		.section__item-footer {
 			flex-direction: column !important;
-			a{
+			a {
 				font-weight: bold;
 				text-align: center;
 				display: flex;
@@ -753,23 +746,49 @@ body {
 				justify-content: center;
 				color: $blue;
 				padding: 15px;
+				border: 1px solid $blue;
+				margin-bottom: 30px !important;
 			}
-			.section__form{
+			.section__form {
 				flex-direction: column !important;
-				input{
+				margin-bottom: 40px !important;
+				input {
 					padding: 18px 0px !important;
 					margin-left: 0 !important;
 					margin-bottom: 18px !important;
-					width:200px !important;
+					width: 200px !important;
 				}
-				.yellowBtn{
-					padding: 17px !important;
+				.yellowBtn {
+					padding: 25px !important;
+					font-weight: bold !important;
+					color: $blue !important;
 				}
 			}
-
 		}
 	}
-	
+	.section__item.auditingServices {
+		background-position: bottom right !important;
+		background-size: 172px !important;
+	}
+	.section__item.countingServices {
+		background-position: bottom right !important;
+		background-size: 310px !important;
+	}
+	.section__item.testingServices {
+		background-position: bottom right !important;
+		background-size: 215px !important;
+	}
+	.section__item.legalServices {
+		background-size: 255px !important;
+	}
+
+	.section__item.economicExpertise {
+		background-size: 317px !important;
+	}
+	.section__item.appraisalServices {
+		background-size: 260px !important;
+	}
+
 	.footer {
 		padding: 25px !important;
 	}

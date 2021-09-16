@@ -637,6 +637,7 @@ body {
 
   .section__item {
     border-radius: 4px !important;
+    background-size: 180px !important;
   }
   .section__item .section__item-footer {
     -webkit-box-orient: vertical !important;
@@ -656,12 +657,15 @@ body {
             justify-content: center;
     color: #001b7b;
     padding: 15px;
+    border: 1px solid #001b7b;
+    margin-bottom: 30px !important;
   }
   .section__item .section__item-footer .section__form {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+    margin-bottom: 40px !important;
   }
   .section__item .section__item-footer .section__form input {
     padding: 18px 0px !important;
@@ -670,7 +674,36 @@ body {
     width: 200px !important;
   }
   .section__item .section__item-footer .section__form .yellowBtn {
-    padding: 17px !important;
+    padding: 25px !important;
+    font-weight: bold !important;
+    color: #001b7b !important;
+  }
+
+  .section__item.auditingServices {
+    background-position: bottom right !important;
+    background-size: 172px !important;
+  }
+
+  .section__item.countingServices {
+    background-position: bottom right !important;
+    background-size: 310px !important;
+  }
+
+  .section__item.testingServices {
+    background-position: bottom right !important;
+    background-size: 215px !important;
+  }
+
+  .section__item.legalServices {
+    background-size: 255px !important;
+  }
+
+  .section__item.economicExpertise {
+    background-size: 317px !important;
+  }
+
+  .section__item.appraisalServices {
+    background-size: 260px !important;
   }
 
   .footer {
