@@ -665,34 +665,30 @@
 			<!--POPUPS-->
 
 			<div id="popup1" style="display: none" class="fancyPopup">
-				<div class="ui form">
-					<div class="field">
-						<label class="label">Name</label>
-						<div class="control">
-							<input
-								class="input"
-								type="text"
-								placeholder="Text input"
-							/>
+				<form action= "" id="form" class="form">
+					<div class="ui form">
+						<div class="field">
+							<div class="control">
+								<input
+									class="input"
+									type="text"
+									placeholder="Имя"
+									id="username"
+								/>
+								<small>Error message</small>
+							</div>
+						</div>
+						<div class="field">
+							<div class="control">
+								<input class="input" type="text" id="phoneNumber" />
+								<small>Error message</small>
+							</div>
+						</div>
+						<div class="field is-grouped">
+							<button type="submit" class="ui yellow button">Жду звонка</button>
 						</div>
 					</div>
-					<div class="field">
-						<label class="label">Username</label>
-						<div class="control has-icons-left has-icons-right">
-							<input
-								class="input is-success"
-								type="text"
-								placeholder="Text input"
-							/>
-						</div>
-					</div>
-					<div class="field is-grouped">
-						<div class="ui inverted">
-							<button class="ui inverted button">Standard</button>
-							<button class="ui yellow button">Yellow</button>
-						</div>
-					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 		<script src="node_modules/jquery/dist/jquery.min.js"></script>
@@ -701,6 +697,7 @@
 		<!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
 		<script src="js/mmenu.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+		<script src="js/main.js"></script>
 
 		<script>
 			document.addEventListener('DOMContentLoaded', (e) => {

@@ -583,10 +583,33 @@ body {
 
 .fancyPopup {
   border-radius: 4px;
+  width: 350px;
 }
 .fancyPopup .ui.form .field {
   font-size: 17px;
   font-family: "Open Sans";
+}
+.fancyPopup .ui.form .field .control small {
+  color: #e74c3c;
+  visibility: hidden;
+}
+.fancyPopup .ui.form .field .control.error input {
+  border-color: #e74c3c;
+}
+.fancyPopup .ui.form .field .control.error small {
+  visibility: visible;
+}
+.fancyPopup .ui.form .field button.yellow {
+  width: 100%;
+  background: #ffe14a;
+  color: #272b33;
+  height: 45px;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+}
+.fancyPopup .ui.form .field button.yellow:active {
+  position: relative;
+  top: 1px;
 }
 
 /**************************MEDIA QUERIES***************************/
