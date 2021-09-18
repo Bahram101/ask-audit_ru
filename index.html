@@ -18,620 +18,719 @@
 			rel="stylesheet"
 			href="node_modules/bootstrap/dist/css/bootstrap.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+		/>
+
+		<link rel="stylesheet" href="css/mmenu.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<div class="wrapper">
-			<header class="header">
-				<div class="header__top">
-					<div
-						class="
-							container
-							header__top-container
-							d-flex
-							justify-content-between
-							align-items-center
-						"
-					>
-						<div class="header__top-left d-flex align-items-center">
-							<div class="menu-burger">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="burger h-6 w-6"
-									width="33"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M4 6h16M4 12h16M4 18h16"
-									/>
-								</svg>
-							</div>
-							<a href="#" class="logo-link"
-								><img
-									src="img/logo.png"
-									alt="логотип"
-									width="110"
-							/></a>
-						</div>
+		<div class="page">
+			<div class="wrapper">
+				<header class="header">
+					<div class="header__top">
 						<div
-							class="header__top-right d-flex align-items-center"
+							class="
+								container
+								header__top-container
+								d-flex
+								justify-content-between
+								align-items-center
+							"
 						>
-							<a href="tel:8 843 207 01 15" class="header__phone"
-								>8 843 207 01 15</a
-							>
-							<div class="mailInsta">
-								<a
-									href="mailto:anetcomp@yandex.ru"
-									class="header__email"
-									>anetcomp@yandex.ru</a
-								>
-								<a href="#" class="header__instaIcon"
-									><img
-										src="img/instagram.svg"
-										width="27"
-										alt=""
-								/></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="header__content">
-					<!--<div class="header-overlay">-->
-					<div class="container header__content-container">
-						<div class="header__content-text">
-							<div class="row">
-								<div class="col-lg-6 col-md-8 header-heading">
-									<div class="center-text">
-										<h4>
-											АУДИТОРСКИЕ И ЮРИДИЧЕСКИЕ УСЛУГИ
-										</h4>
-										<h1>
-											Мы оказываем сильную <br />и
-											надежную поддержку вашему бизнесу
-										</h1>
-									</div>
-								</div>
-								<div
-									class="col-lg-6 col-md-4 yellowBlock"
-								></div>
-							</div>
-						</div>
-					</div>
-					<!--</div>-->
-				</div>
-			</header>
-
-			<section class="section services">
-				<div class="container">
-					<h2 class="section__title services__title">
-						В чем мы сильны или чем специалисты <br />компании могут
-						быть полезны
-					</h2>
-					<div class="row">
-						<div class="col-lg-6 col">
-							<div class="section__item auditingServices">
-								<div class="section__item-header">
-									<div class="section__item-title">
-										Аудиторские услуги
-									</div>
-									<div class="section__item-subtitle">
-										Аудиторские услуги нужны всегда и везде!
-									</div>
-								</div>
-								<div class="section__item-body">
-									<ul>
-										<li>
-											Обязательный аудит за вашу стоимость
-										</li>
-										<li>Инициативный аудит</li>
-										<li>Налоговый аудит</li>
-										<li>Экспресс-аудит от 9 500 руб.</li>
-										<li>Кадровый аудит</li>
-									</ul>
-								</div>
-								<div class="section__item-footer d-flex">
-									<a
-										href="#"
-										class="
-											section__btn-detail
-											btn btn-outline-secondary
-										"
-										>Подробнее</a
-									>
-									<form
-										action="#"
-										method="post"
-										class="section__form d-flex"
-									>
-										<input
-											type="text"
-											placeholder="Ваш номер"
-										/>
-										<button type="submit" class="yellowBtn">
-											Звонок специалисту
-										</button>
-									</form>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col d-flex">
 							<div
 								class="
-									section__item
-									countingServices
+									header__top-left
 									d-flex
-									flex-column
-									justify-content-between
+									align-items-center
 								"
 							>
-								<div class="section__item-header">
-									<div class="section__item-title">
-										Бухгалтерские услуги
-									</div>
-									<div class="section__item-subtitle">
-										Доверьте ведение учета и сдачу
-										отчетности аудиторской компании
-									</div>
-								</div>
-								<div class="section__item-footer d-flex">
-									<a
-										href="#"
-										class="
-											section__btn-detail
-											btn btn-outline-secondary
-										"
-										>Подробнее</a
+								<a href="#menu" class="menu-burger">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="burger h-6 w-6"
+										width="33"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
 									>
-									<form
-										action="#"
-										method="post"
-										class="section__form d-flex"
-									>
-										<input
-											type="text"
-											placeholder="Ваш номер"
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M4 6h16M4 12h16M4 18h16"
 										/>
-										<button
-											type="submit "
-											class="yellowBtn"
-										>
-											Звонок специалисту
-										</button>
-									</form>
-								</div>
+									</svg>
+								</a>
+								<a href="#" class="logo-link"
+									><img
+										src="img/logo.png"
+										alt="логотип"
+										width="110"
+								/></a>
 							</div>
-						</div>
-						<div class="col-lg-6 col">
-							<div class="section__item testingServices">
-								<div class="section__item-header">
-									<div class="section__item-title">
-										Тестирование персонала
-									</div>
-									<div class="section__item-subtitle">
-										Оценка знаний при приеме и периодическая
-										аттестация сотрудников
-									</div>
-								</div>
-								<div class="section__item-footer d-flex">
+							<div
+								class="
+									header__top-right
+									d-flex
+									align-items-center
+								"
+							>
+								<a
+									href="tel:8 843 207 01 15"
+									class="header__phone"
+									>8 843 207 01 15</a
+								>
+								<div class="mailInsta">
 									<a
-										href="#"
-										class="
-											section__btn-detail
-											btn btn-outline-secondary
-										"
-										>Подробнее</a
+										href="mailto:anetcomp@yandex.ru"
+										class="header__email"
+										>anetcomp@yandex.ru</a
 									>
-									<form
-										action="#"
-										method="post"
-										class="section__form d-flex"
-									>
-										<input
-											type="text"
-											placeholder="Ваш номер"
-										/>
-										<button type="submit" class="yellowBtn">
-											Звонок специалисту
-										</button>
-									</form>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col">
-							<div class="section__item legalServices">
-								<div class="section__item-header">
-									<div class="section__item-title">
-										Юридические услуги
-									</div>
-								</div>
-								<div class="section__item-body">
-									<ul>
-										<li>
-											Обязательный аудит за вашу стоимость
-										</li>
-										<li>Инициативный аудит</li>
-									</ul>
-								</div>
-								<div class="section__item-footer d-flex">
-									<a
-										href="#"
-										class="
-											section__btn-detail
-											btn btn-outline-secondary
-										"
-										>Подробнее</a
-									>
-									<form
-										action="#"
-										method="post"
-										class="section__form d-flex"
-									>
-										<input
-											type="text"
-											placeholder="Ваш номер"
-										/>
-										<button type="submit" class="yellowBtn">
-											Звонок специалисту
-										</button>
-									</form>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col">
-							<div class="section__item economicExpertise">
-								<div class="section__item-header">
-									<div class="section__item-title">
-										Аудиторские услуги
-									</div>
-									<div class="section__item-subtitle">
-										Аудиторские услуги нужны всегда и везде!
-									</div>
-								</div>
-								<div class="section__item-body">
-									<ul>
-										<li>
-											Обязательный аудит за вашу стоимость
-										</li>
-										<li>Инициативный аудит</li>
-										<li>Налоговый аудит</li>
-									</ul>
-								</div>
-								<div class="section__item-footer d-flex">
-									<a
-										href="#"
-										class="
-											section__btn-detail
-											btn btn-outline-secondary
-										"
-										>Подробнее</a
-									>
-									<form
-										action="#"
-										method="post"
-										class="section__form d-flex"
-									>
-										<input
-											type="text"
-											placeholder="Ваш номер"
-										/>
-										<button type="submit" class="yellowBtn">
-											Звонок специалисту
-										</button>
-									</form>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col">
-							<div class="section__item appraisalServices">
-								<div class="section__item-header">
-									<div class="section__item-title">
-										Аудиторские услуги
-									</div>
-									<div class="section__item-subtitle">
-										Аудиторские услуги нужны всегда и везде!
-									</div>
-								</div>
-								<div class="section__item-body">
-									<ul>
-										<li>
-											Обязательный аудит за вашу стоимость
-										</li>
-										<li>Инициативный аудит</li>
-										<li>Налоговый аудит</li>
-									</ul>
-								</div>
-								<div class="section__item-footer d-flex">
-									<a
-										href="#"
-										class="
-											section__btn-detail
-											btn btn-outline-secondary
-										"
-										>Подробнее</a
-									>
-									<form
-										action="#"
-										method="post"
-										class="section__form d-flex"
-									>
-										<input
-											type="text"
-											placeholder="Ваш номер"
-										/>
-										<button type="submit" class="yellowBtn">
-											Звонок специалисту
-										</button>
-									</form>
+									<a href="#" class="header__instaIcon"
+										><img
+											src="img/instagram.svg"
+											width="27"
+											alt=""
+									/></a>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-
-			<section class="section ourExperts">
-				<div class="container">
-					<h2 class="section__title expert-title">
-						Наши специалисты
-					</h2>
-					<div class="row">
-						<div class="col-md-3 col-sm-6">
-							<div class="expert-item">
-								<a href="#"
-									><img
-										class="card-img-top expert-img"
-										src="img/desktop/07.png"
-										alt=""
-								/></a>
-								<div class="card-body expert-body">
-									<a href="#"
-										><h5
-											class="
-												card-title
-												expert__body-title
-											"
-										>
-											Иванова Иванна Ивановна
-										</h5></a
-									>
-									<p class="card-text expert-speciality">
-										консалтинговые услуги
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="expert-item">
-								<a href="#"
-									><img
-										class="card-img-top expert-img"
-										src="img/desktop/08.png"
-										alt=""
-								/></a>
-								<div class="card-body expert-body">
-									<a href="#"
-										><h5
-											class="
-												card-title
-												expert__body-title
-											"
-										>
-											Иванова Иванна Ивановна
-										</h5></a
-									>
-									<p class="card-text expert-speciality">
-										консалтинговые услуги
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="expert-item">
-								<a href="#"
-									><img
-										class="card-img-top expert-img"
-										src="img/desktop/09.png"
-										alt=""
-								/></a>
-								<div class="card-body expert-body">
-									<a href="#"
-										><h5
-											class="
-												card-title
-												expert__body-title
-											"
-										>
-											Иванова Иванна Ивановна
-										</h5></a
-									>
-									<p class="card-text expert-speciality">
-										тестирование персонала
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="expert-item">
-								<a href="#"
-									><img
-										class="card-img-top expert-img"
-										src="img/desktop/10.png"
-										alt=""
-								/></a>
-								<div class="card-body expert-body">
-									<a href="#"
-										><h5
-											class="
-												card-title
-												expert__body-title
-											"
-										>
-											Иванова Иванна Ивановна
-										</h5></a
-									>
-									<p class="card-text expert-speciality">
-										юридические услуги
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="section contact">
-				<div class="container">
-					<h2 class="section__title">Контакты</h2>
-					<div class="row">
-						<div class="col-md-5 d-flex align-items-center mb">
-							<img
-								src="img/desktop/11.png"
-								class="contact-img"
-								alt=""
-							/>
-						</div>
-						<div class="col-md-7">
-							<div class="contact__info">
+					<div class="header__content">
+						<!-- <div class="header-overlay"> -->
+						<div class="container header__content-container">
+							<div class="header__content-text">
 								<div class="row">
-									<div class="col-sm-7">
-										<div class="contact__info-item">
-											<div class="info__item-top">
-												<img
-													src="img/office.svg"
-													alt=""
-												/>
-												<h3>Офис</h3>
-											</div>
-											<p>
-												01032 г. Киев, улица
-												Саксаганского <br />
-												119, БЦ «Botanik Tower»
-											</p>
+									<div
+										class="col-lg-6 col-md-8 header-heading"
+									>
+										<div class="center-text">
+											<h4>
+												АУДИТОРСКИЕ И ЮРИДИЧЕСКИЕ УСЛУГИ
+											</h4>
+											<h1>
+												Мы оказываем сильную <br />и
+												надежную поддержку вашему
+												бизнесу
+											</h1>
 										</div>
-									</div>
-									<div class="col-sm-5">
-										<div class="contact__info-item">
-											<div class="info__item-top">
-												<img
-													src="img/time.svg"
-													alt=""
-												/>
-												<h3>График</h3>
-											</div>
-											<p>
-												Пн-Пт: 09:00-18:00 <br />Сб-ВС:
-												выходной
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-7">
-										<div class="contact__info-item">
-											<div
-												class="
-													info__item-top
-													info__item-phone
-												"
-											>
-												<img
-													src="img/phone.svg"
-													alt=""
-												/>
-												<h3>Телефон</h3>
-											</div>
-											<p>8 842 207 01 15</p>
-										</div>
-									</div>
-									<div class="col-sm-5">
-										<div class="contact__info-item">
-											<div class="info__item-top">
-												<img
-													src="img/message.svg"
-													alt=""
-												/>
-												<h3>Почта</h3>
-											</div>
-											<p>anetcomp@yandex.ru</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<footer class="footer">
-				<div class="container">
-					<div class="row copyright">
-						<div class="col-md-6">
-							<div class="row">
-								<div class="col firstBlock">
-									<div class="footer__logo">
-										<img src="img/logo.png" alt="" />
 									</div>
 									<div
-										class="
-											confidentiality
-											d-flex
-											align-items-center
-										"
-									>
-										<a href=""
-											><img src="img/download.svg" alt=""
-										/></a>
-										<a href="#" class="instaIconFooter"
-											>Конфиденциальность</a
-										>
-										<a href=""
-											><img
-												src="img/instagram.svg"
-												class="insta"
-												alt=""
-										/></a>
-									</div>
-									<div class="copyright">
-										<p>Все права защищены</p>
-									</div>
+										class="col-lg-6 col-md-4 yellowBlock"
+									></div>
 								</div>
 							</div>
 						</div>
+						<!-- </div> -->
+					</div>
+				</header>
 
-						<div class="col-md-6">
-							<div class="row serviceContact">
-								<div class="col-md-6 services">
-									<h4>Услуги</h4>
-									<ul>
-										<li>Аудиторские услуги</li>
-										<li>Консалтинковые услуги</li>
-										<li>Тестирование персонала</li>
-										<li>Юридические услуги</li>
-										<li>Услуги оценки</li>
-										<li>
+				<section class="section services">
+					<div class="container">
+						<h2 class="section__title services__title">
+							В чем мы сильны или чем специалисты <br />компании
+							могут быть полезны
+						</h2>
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-12 d-flex">
+								<div class="section__item auditingServices">
+									<div class="section__item-header">
+										<div class="section__item-title">
+											Аудиторские услуги
+										</div>
+										<div class="section__item-subtitle">
+											Аудиторские услуги нужны всегда и
+											везде!
+										</div>
+									</div>
+									<div class="section__item-body">
+										<ul>
+											<li>
+												Обязательный аудит за вашу
+												стоимость
+											</li>
+											<li>Инициативный аудит</li>
+											<li>Налоговый аудит</li>
+											<li>
+												Экспресс-аудит от 9 500 руб.
+											</li>
+											<li>Кадровый аудит</li>
+										</ul>
+									</div>
+									<div class="section__item-footer d-flex">
+										<a
+											href="#"
+											class="
+												section__btn-detail
+												btn btn-outline-secondary
+											"
+											>Подробнее</a
+										>
+
+										<a
+											href="#popup1"
+											class="yellowBtn callMe"
+										>
+											Заказать звонок
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12 d-flex">
+								<div
+									class="
+										section__item
+										countingServices
+										d-flex
+										flex-column
+										justify-content-between
+									"
+								>
+									<div class="section__item-header">
+										<div class="section__item-title">
+											Бухгалтерские услуги
+										</div>
+										<div class="section__item-subtitle">
+											Доверьте ведение учета и сдачу
+											отчетности аудиторской компании
+										</div>
+									</div>
+									<div class="section__item-footer d-flex">
+										<a
+											href=""
+											class="
+												section__btn-detail
+												btn btn-outline-secondary
+											"
+											>Подробнее</a
+										>
+
+										<a href="" class="yellowBtn callMe">
+											Заказать звонок
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12 d-flex">
+								<div class="section__item testingServices">
+									<div class="section__item-header">
+										<div class="section__item-title">
+											Тестирование персонала
+										</div>
+										<div class="section__item-subtitle">
+											Оценка знаний при приеме и
+											периодическая аттестация сотрудников
+										</div>
+									</div>
+									<div class="section__item-footer d-flex">
+										<a
+											href="#"
+											class="
+												section__btn-detail
+												btn btn-outline-secondary
+											"
+											>Подробнее</a
+										>
+
+										<a href="" class="yellowBtn">
+											Заказать звонок
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12 d-flex">
+								<div class="section__item legalServices">
+									<div class="section__item-header">
+										<div class="section__item-title">
+											Юридические услуги
+										</div>
+									</div>
+									<div class="section__item-body">
+										<ul>
+											<li>
+												Обязательный аудит за вашу
+												стоимость
+											</li>
+											<li>Инициативный аудит</li>
+										</ul>
+									</div>
+									<div class="section__item-footer d-flex">
+										<a
+											href="#"
+											class="
+												section__btn-detail
+												btn btn-outline-secondary
+											"
+											>Подробнее</a
+										>
+
+										<a href="" class="yellowBtn">
+											Заказать звонок
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12 d-flex">
+								<div class="section__item economicExpertise">
+									<div class="section__item-header">
+										<div class="section__item-title">
 											Судебная бухгалтерия и экономическая
 											экспертиза
-										</li>
-									</ul>
-								</div>
+										</div>
+										<div class="section__item-subtitle">
+											Аудиторские услуги нужны всегда и
+											везде!
+										</div>
+									</div>
+									<div class="section__item-body">
+										<ul>
+											<li>
+												Обязательный аудит за вашу
+												стоимость
+											</li>
+											<li>Инициативный аудит</li>
+											<li>Налоговый аудит</li>
+										</ul>
+									</div>
+									<div class="section__item-footer d-flex">
+										<a
+											href="#"
+											class="
+												section__btn-detail
+												btn btn-outline-secondary
+											"
+											>Подробнее</a
+										>
 
-								<div class="col-md-6 about">
-									<ul>
-										<li>О компании</li>
-										<li>Контакты</li>
-										<li>Вакансии</li>
-									</ul>
+										<a href="" class="yellowBtn">
+											Заказать звонок
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12 d-flex">
+								<div class="section__item appraisalServices">
+									<div class="section__item-header">
+										<div class="section__item-title">
+											Услуги оценки
+										</div>
+										<div class="section__item-subtitle">
+											Аудиторские услуги нужны всегда и
+											везде!
+										</div>
+									</div>
+									<div class="section__item-body">
+										<ul>
+											<li>
+												Обязательный аудит за вашу
+												стоимость
+											</li>
+											<li>Инициативный аудит</li>
+											<li>Налоговый аудит</li>
+										</ul>
+									</div>
+									<div class="section__item-footer d-flex">
+										<a
+											href="#"
+											class="
+												section__btn-detail
+												btn btn-outline-secondary
+											"
+											>Подробнее</a
+										>
+
+										<a href="" class="yellowBtn">
+											Заказать звонок
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+				</section>
+
+				<section class="section ourExperts">
+					<div class="container">
+						<h2 class="section__title expert-title">
+							Наши специалисты
+						</h2>
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="expert-item">
+									<a href="#"
+										><img
+											class="card-img-top expert-img"
+											src="img/desktop/07.png"
+											alt=""
+									/></a>
+									<div class="card-body expert-body">
+										<a href="#"
+											><h5
+												class="
+													card-title
+													expert__body-title
+												"
+											>
+												Иванова Иванна Ивановна
+											</h5></a
+										>
+										<p class="card-text expert-speciality">
+											консалтинговые услуги
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="expert-item">
+									<a href="#"
+										><img
+											class="card-img-top expert-img"
+											src="img/desktop/08.png"
+											alt=""
+									/></a>
+									<div class="card-body expert-body">
+										<a href="#"
+											><h5
+												class="
+													card-title
+													expert__body-title
+												"
+											>
+												Иванова Иванна Ивановна
+											</h5></a
+										>
+										<p class="card-text expert-speciality">
+											консалтинговые услуги
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="expert-item">
+									<a href="#"
+										><img
+											class="card-img-top expert-img"
+											src="img/desktop/09.png"
+											alt=""
+									/></a>
+									<div class="card-body expert-body">
+										<a href="#"
+											><h5
+												class="
+													card-title
+													expert__body-title
+												"
+											>
+												Иванова Иванна Ивановна
+											</h5></a
+										>
+										<p class="card-text expert-speciality">
+											тестирование персонала
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="expert-item">
+									<a href="#"
+										><img
+											class="card-img-top expert-img"
+											src="img/desktop/10.png"
+											alt=""
+									/></a>
+									<div class="card-body expert-body">
+										<a href="#"
+											><h5
+												class="
+													card-title
+													expert__body-title
+												"
+											>
+												Иванова Иванна Ивановна
+											</h5></a
+										>
+										<p class="card-text expert-speciality">
+											юридические услуги
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section contact">
+					<div class="container">
+						<h2 class="section__title">Контакты</h2>
+						<div class="row">
+							<div class="col-md-5 d-flex align-items-center mb">
+								<img
+									src="img/desktop/11.png"
+									class="contact-img"
+									alt=""
+								/>
+							</div>
+							<div class="col-md-7">
+								<div class="contact__info">
+									<div class="row">
+										<div class="col-sm-7">
+											<div class="contact__info-item">
+												<div class="info__item-top">
+													<img
+														src="img/office.svg"
+														alt=""
+													/>
+													<h3>Офис</h3>
+												</div>
+												<p>
+													01032 г. Киев, улица
+													Саксаганского <br />
+													119, БЦ «Botanik Tower»
+												</p>
+											</div>
+										</div>
+										<div class="col-sm-5">
+											<div class="contact__info-item">
+												<div class="info__item-top">
+													<img
+														src="img/time.svg"
+														alt=""
+													/>
+													<h3>График</h3>
+												</div>
+												<p>
+													Пн-Пт: 09:00-18:00
+													<br />Сб-ВС: выходной
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-7">
+											<div class="contact__info-item">
+												<div
+													class="
+														info__item-top
+														info__item-phone
+													"
+												>
+													<img
+														src="img/phone.svg"
+														alt=""
+													/>
+													<h3>Телефон</h3>
+												</div>
+												<p>8 842 207 01 15</p>
+											</div>
+										</div>
+										<div class="col-sm-5">
+											<div class="contact__info-item">
+												<div class="info__item-top">
+													<img
+														src="img/message.svg"
+														alt=""
+													/>
+													<h3>Почта</h3>
+												</div>
+												<p>anetcomp@yandex.ru</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="map">
+					<script
+						type="text/javascript"
+						charset="utf-8"
+						async
+						src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac197fb45b5f877983273ca7b95e372ed4b2bc7ad51e7e64c026e5b442d7e1f92&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;"
+					></script>
+				</section>
+
+				<footer class="footer">
+					<div class="container">
+						<div class="row copyright">
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col firstBlock">
+										<div class="footer__logo">
+											<img src="img/logo.png" alt="" />
+										</div>
+										<div
+											class="
+												confidentiality
+												d-flex
+												align-items-center
+											"
+										>
+											<a href=""
+												><img
+													src="img/download.svg"
+													alt=""
+											/></a>
+											<a href="#" class="instaIconFooter"
+												>Конфиденциальность</a
+											>
+											<a href=""
+												><img
+													src="img/instagram.svg"
+													class="insta"
+													alt=""
+											/></a>
+										</div>
+										<div class="copyright">
+											<p>Все права защищены</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="row serviceContact">
+									<div class="col-md-6 services">
+										<h4>Услуги</h4>
+										<ul>
+											<li>Аудиторские услуги</li>
+											<li>Консалтинковые услуги</li>
+											<li>Тестирование персонала</li>
+											<li>Юридические услуги</li>
+											<li>Услуги оценки</li>
+											<li>
+												Судебная бухгалтерия и
+												экономическая экспертиза
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-md-6 about">
+										<ul>
+											<li>О компании</li>
+											<li>Контакты</li>
+											<li>Вакансии</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+			<!--MENU-->
+			<nav id="menu">
+				<ul>
+					<li><a href="/">О компании</a></li>
+
+					<li>
+						<span>Услуги</span>
+						<ul>
+							<li><a href="">Аудиторские услуги</a></li>
+							<li><a href="">Бухгалтерские услуги</a></li>
+							<li><a href="">Тестирование персонала</a></li>
+							<li><a href="">Юридические услуги</a></li>
+						</ul>
+					</li>
+					<li><a href="vacancy.html">Вакансии</a></li>
+					<li><a href="/" class="mmenu-contact">Контакты</a></li>
+					<li>
+						<a href="/" class="mmenu-contact">8 843 207 01 15</a>
+					</li>
+					<li>
+						<a href="/" class="mmenu-contact">anetcomp@yandex.ru</a>
+					</li>
+					<li>
+						<a href="https://instagram.com" class="mmenu-contact"
+							><img src="img/instagram.svg" width="27" alt=""
+						/></a>
+					</li>
+				</ul>
+			</nav>
+
+			<!--POPUPS-->
+
+			<div id="popup1" style="display: none" class="fancyPopup">
+				<div class="ui form">
+					<div class="field">
+						<label class="label">Name</label>
+						<div class="control">
+							<input
+								class="input"
+								type="text"
+								placeholder="Text input"
+							/>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">Username</label>
+						<div class="control has-icons-left has-icons-right">
+							<input
+								class="input is-success"
+								type="text"
+								placeholder="Text input"
+							/>
+						</div>
+					</div>
+					<div class="field is-grouped">
+						<div class="ui inverted">
+							<button class="ui inverted button">Standard</button>
+							<button class="ui yellow button">Yellow</button>
+						</div>
+					</div>
 				</div>
-			</footer>
+			</div>
 		</div>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+		<!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+		<script src="js/mmenu.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', (e) => {
+				new Mmenu('#menu', {
+					extensions: ['pagedim-black', 'theme-dark'],
+					counters: true,
+					navbars: [
+						{
+							position: 'top',
+							content: ['prev', 'title'],
+						},
+					],
+				});
+			});
+			$(function () {
+				$('.callMe').fancybox({
+					margin: 0,
+					padding: 20,
+					maxWidth: 400,
+					autoScale: true,
+					transitionIn: 'none',
+					transitionOut: 'none',
+					type: 'inline',
+					helpers: {
+						overlay: {
+							locked: false,
+						},
+					},
+				});
+			});
+		</script>
 	</body>
 </html>

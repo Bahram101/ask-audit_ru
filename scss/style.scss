@@ -1,4 +1,3 @@
-/* oswald-regular - latin */
 @font-face {
 	font-family: 'Charter';
 	font-style: normal;
@@ -34,6 +33,39 @@ $openSans: 'Open Sans', sans-serif;
 $charter: Charter;
 $charterBold: CharterBold;
 $fontFamily: $openSans;
+
+//mmenu
+.mm-navbar__title {
+	// background-color: $blue !important;
+	font-size: 22px;
+	font-family: $openSans;
+	span {
+		color: white;
+		height: 28px;
+	}
+}
+.mm-panel.mm-panel_opened {
+	// background: $blue !important;
+}
+
+.mm-listitem {
+	border-color: #6d6d6d;
+	padding: 12px 0;
+	&:after {
+		right: 23px;
+	}
+	&:last-child {
+		border: #6d6d6d;
+	}
+	a {
+		// font-family: $charter;
+		font-family: $openSans;
+		font-size: 18px;
+	}
+}
+.mmenu-contact {
+	border-color: $blue;
+}
 
 @mixin mainFonts(
 	$color: green,
@@ -76,12 +108,16 @@ a:hover {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	background: $yellow;
+	background: $yellow !important;
 	color: $gray;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 600;
+	position: relative;
+	// left: 15px;
+	margin-left: 15px;
 }
+
 
 form.section__form {
 	input {
@@ -158,16 +194,16 @@ body {
 		background: url('../img/header-img.png');
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: bottom;
+		background-position: center top;
 		height: 545px;
 		display: flex;
 		align-items: center;
 		position: relative;
-		//.header-overlay{
-		//height: inherit;
-		//position: absolute;
-		//width: 100%;
-		//background: rgba(0 0 0 /30%);
+		// .header-overlay{
+		// 	height: inherit;
+		// position: absolute;
+		// width: 100%;
+		// background: rgba(0 0 0 /30%);
 		.header__content-container {
 			height: 100%;
 			align-items: center;
@@ -204,9 +240,10 @@ body {
 							}
 						}
 						h1 {
-							font-size: 42px;
+							font-size: 40px;
 							line-height: 53px;
 							position: relative;
+							font-family: $charter
 						}
 					}
 
@@ -242,9 +279,14 @@ body {
 		font-size: 34px;
 		margin-bottom: 60px;
 		text-align: center;
+		font-family: $charter;
 	}
 	.section__item {
 		//background-image: url(../img/desktop/01.png);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
 		background-repeat: no-repeat;
 		background-position: bottom right;
 		background-size: auto;
@@ -297,19 +339,29 @@ body {
 				}
 			}
 		}
-		.section__item-footer a {
-			font-family: 'Open Sans', sans-serif;
-			font-size: 14px;
-			display: flex;
-			align-items: center;
-			&:hover {
-				background: $hoverBtnWhite;
-				border-color: $hoverBtnWhite;
+		.section__item-footer {
+			a{
+				font-family: 'Open Sans', sans-serif;
+				font-size: 14px;
+				display: flex;
+				align-items: center;
+				background:white;
+				&:hover {
+					background: $hoverBtnWhite;
+					border-color: $hoverBtnWhite;
+				}
+				&:focus {
+					box-shadow: none;
+					background: $clickBtnWhite;
+				}
 			}
-			&:focus {
-				box-shadow: none;
-				background: $clickBtnWhite;
+			.yellowBtn{
+				&:hover{
+					background:$yellow !important;
+				}
 			}
+			
+			
 		}
 		form.section__form {
 			input {
@@ -322,20 +374,20 @@ body {
 				margin-right: 20px;
 				outline: none;
 			}
-			.yellowBtn {
-				border: none;
-				padding: 13px 15px;
-				-webkit-border-radius: 5px;
-				-moz-border-radius: 5px;
-				border-radius: 5px;
-				background: $yellow;
-				color: $gray;
-				font-family: 'Open Sans', sans-serif;
-				font-size: 14px;
-				font-weight: 600;
+			// a.yellowBtn {
+			// 	border: none;
+			// 	padding: 13px 15px;
+			// 	-webkit-border-radius: 5px;
+			// 	-moz-border-radius: 5px;
+			// 	border-radius: 5px;
+			// 	background: $yellow !important;
+			// 	color: $gray;
+			// 	font-family: 'Open Sans', sans-serif;
+			// 	font-size: 14px;
+			// 	font-weight: 600;
 			}
 		}
-	}
+	
 
 	.auditingServices {
 		background-image: url(../img/desktop/01.png);
@@ -437,8 +489,11 @@ body {
 		.vacancy__aside {
 			border-right: 1px solid #d2d2d2;
 			height: 100%;
+			text-transform: uppercase;
+			color: $charterBold;
+
 			h1 {
-				font-size: 42px;
+				font-size: 39px;
 				margin-bottom: 30px;
 			}
 		}
@@ -451,10 +506,9 @@ body {
 				font-size: 16px;
 				line-height: 30px;
 				margin-bottom: 30px;
-			}
-			ul {
 				li {
 					position: relative;
+					left: 15px;
 					&:before {
 						content: '';
 						position: absolute;
@@ -615,18 +669,49 @@ body {
 	}
 }
 
+//Modal
+.fancyPopup{
+	border-radius: 4px;
+	.ui.form{
+		.field{
+			font-size: 17px;
+			font-family: 'Open Sans';
+		}
+	}
+}
+
+
 /**************************MEDIA QUERIES***************************/
 //XL
 @media (min-width: 1200px) {
 }
 
 //LG
+@media (min-width: 992px) {
+	.vacancy-content {
+		button.bottom {
+			display: none !important;
+		}
+	}
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
 }
 
 //MD
 
 @media (max-width: 991px) {
+	.vacancy__content.mb-5 .col-lg-3 {
+		margin-bottom: 20px !important;
+	}
+	.vacancy__aside {
+		border-right: none !important;
+		text-align: center !important;
+		border-bottom: 1px solid rgba(39, 43, 51, 0.3);
+		button.top {
+			display: none !important;
+		}
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -638,10 +723,9 @@ body {
 
 	.countingServices {
 		width: 100% !important;
-		height: 280px !important;
 	}
 	.testingServices {
-		height: 290px !important;
+		// height: 290px !important;
 	}
 
 	.yellowBlock {
@@ -717,6 +801,11 @@ body {
 			font-size: 18px !important;
 		}
 	}
+	.audit__top {
+		.audit__top-img {
+			width: 100% !important;
+		}
+	}
 	.contact {
 		.col-md-5.mb {
 			margin-bottom: 50px !important;
@@ -726,8 +815,11 @@ body {
 
 //XS
 @media (max-width: 575px) {
-	.contact__info{
-		border-radius:4px !important;
+	.yellowBtn {
+		margin-left: 0 !important;
+	}
+	.contact__info {
+		border-radius: 4px !important;
 	}
 	.audit__top {
 		border-radius: 4px !important;
@@ -743,16 +835,15 @@ body {
 				padding: 10px 0 !important;
 				margin-bottom: 20px !important;
 				width: 100% !important;
-				
 			}
 		}
 	}
 	.countingServices {
 		width: 100% !important;
-		// height: 280px !important;
 	}
 	.section__title {
 		font-size: 28px !important;
+		font-family: $charter;
 	}
 	.header__content-text {
 		h1 {
@@ -774,6 +865,7 @@ body {
 	.section__item {
 		border-radius: 4px !important;
 		background-size: 180px !important ;
+
 		.section__item-title {
 			font-size: 22px !important;
 		}
@@ -788,7 +880,7 @@ body {
 				justify-content: center;
 				color: $blue;
 				padding: 15px;
-				border: 1px solid $blue;
+				// border: 1px solid $blue;
 				margin-bottom: 30px !important;
 			}
 			.section__form {
