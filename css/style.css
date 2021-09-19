@@ -137,7 +137,7 @@ body {
   padding-right: 13px;
 }
 .header .header__content {
-  background: url("../img/header-img.png");
+  background: url("../img/header-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;

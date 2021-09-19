@@ -1,66 +1,51 @@
-/* 
-document.addEventListener('DOMContentLoaded', function(){
-	const form = document.getElementById('form')
-	form.addEventListener('submit', formSend)
+// document.addEventListener('DOMContentLoaded', function () {
+// 	const form = document.getElementById('form');
+// 	form.addEventListener('submit', formSend);
 
-	async function formSend(e){
-		e.preventDefault()
+// 	async function formSend(e) {
+// 		e.preventDefault();
 
-		let error = formValidate(form)
+// 		let error = formValidate(form);
+// 		let formData = new FormData(form);
 
-		let formData = new FormData(form)
+// 		if (error === 0) {
+// 			console.log('ok');
+// 			form.classList.add('_sending');
+// 			const response = await fetch('send.php', {
+// 				method: 'POST',
+// 				body: formData,
+// 			});
 
+// 			if (response.ok) {
+// 				form.reset();
+// 				$.fancybox.close();
+// 				form.classList.remove('_sending');
+// 			} else {
+// 				form.classList.remove('_sending');
+// 			}
+// 		}
+// 	}
 
-		if(error === 0){
-			form.classList.add('_sending')
-			let response = await fetch('send.php',{
-				method:'POST',
-				body:formData
-			})
-			if(response.ok){
-				let result = await response.json();
-				alert(result.message)
-				formPreview.innerHTML = ''
-				form.reset()
-				form.classList.remove('_sending')	
-			}else{
-				alert('ERROR')
-				form.classList.remove('_sending')	
-			}
-		}
-		
-	}
+// 	function formValidate(form) {
+// 		let error = 0;
+// 		let formReq = document.querySelectorAll('._req');
 
-	function formValidate(form){
-		let error = 0
-		let formReq = document.querySelectorAll('._req')
+// 		for (let i = 0; i < formReq.length; i++) {
+// 			const input = formReq[i];
+// 			formRemoveError(input);
 
-		for(let i=0; i< formReq.length; i++){
-			const input = formReq[i]
-			formRemoveError(input)
+// 			if (input.value === '') {
+// 				formAddError(input);
+// 				error++;
+// 			}
+// 		}
+// 		return error;
+// 	}
 
-			if(input.value === ''){
-				formAddError(input)
-				error++;
-			}
-			
-		}	
-		return error	
-
-	}
-
-
-	formAddError = (input)=>{
-		input.parentElement.classList.add('_error')
-		// input.classList.add('_error')
-	}
-	formRemoveError = (input)=>{
-		input.parentElement.classList.remove('_error')
-		// input.classList.remove('_error')
-	}
-})    
-   
-
-
-
- */
+// 	formAddError = (input) => {
+// 		input.parentElement.classList.add('_error');
+// 	};
+// 	formRemoveError = (input) => {
+// 		input.parentElement.classList.remove('_error');
+// 	};
+// });

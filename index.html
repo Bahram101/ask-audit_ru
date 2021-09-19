@@ -4,12 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" /> -->
 		<title>ask-audit.ru</title>
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-		/>
+
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
 			rel="stylesheet"
@@ -22,11 +18,7 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
 		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-		/>
-
+		
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
@@ -217,7 +209,10 @@
 											>Подробнее</a
 										>
 
-										<a href="" class="yellowBtn callMe">
+										<a
+											href="#popup2"
+											class="yellowBtn callMe"
+										>
 											Заказать звонок
 										</a>
 									</div>
@@ -244,7 +239,10 @@
 											>Подробнее</a
 										>
 
-										<a href="" class="yellowBtn">
+										<a
+											href="#popup3"
+											class="yellowBtn callMe"
+										>
 											Заказать звонок
 										</a>
 									</div>
@@ -276,7 +274,10 @@
 											>Подробнее</a
 										>
 
-										<a href="" class="yellowBtn">
+										<a
+											href="#popup4"
+											class="yellowBtn callMe"
+										>
 											Заказать звонок
 										</a>
 									</div>
@@ -314,7 +315,10 @@
 											>Подробнее</a
 										>
 
-										<a href="" class="yellowBtn">
+										<a
+											href="#popup5"
+											class="yellowBtn callMe"
+										>
 											Заказать звонок
 										</a>
 									</div>
@@ -351,7 +355,10 @@
 											>Подробнее</a
 										>
 
-										<a href="" class="yellowBtn">
+										<a
+											href="#popup6"
+											class="yellowBtn callMe"
+										>
 											Заказать звонок
 										</a>
 									</div>
@@ -477,7 +484,7 @@
 						<div class="row">
 							<div class="col-md-5 d-flex align-items-center mb">
 								<img
-									src="img/desktop/11.png"
+									src="img/desktop/11.webp"
 									class="contact-img"
 									alt=""
 								/>
@@ -665,16 +672,48 @@
 			<!--POPUPS-->
 
 			<div id="popup1" style="display: none" class="fancyPopup">
-				<form action= "send.php" method="post" id="form" class="form">
+				<form action="send.php" method="post" id="form" class="form _form">
 					<div class="ui form">
 						<div class="field">
 							<div class="control">
+								<input type="hidden" name="audit">
 								<input
 									class="input _req"
 									type="text"
 									placeholder="Имя"
 									id="username"
 									name="userName"
+									required
+
+								/>
+								<small>Error message</small>
+							</div>
+						</div>
+						<div class="field">
+							<div class="control">
+								<input class="input _req" type="text" id="phoneNumber" name="phoneNumber" required />
+								<small>Error message</small>
+							</div>
+						</div>
+						<div class="field is-grouped">
+							<button type="submit" class="ui yellow button" name="audit">Жду звонка</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div id="popup2" style="display: none" class="fancyPopup">
+				<form action="send.php" method="post" id="form2" class="form _form">
+					<div class="ui form">
+						<div class="field">
+							<div class="control">
+								<input type="hidden">
+								<input
+									class="input _req"
+									type="text"
+									placeholder="Имя"
+									id="username"
+									name="userName"
+									required
 
 								/>
 								<small>Error message</small>
@@ -687,16 +726,131 @@
 							</div>
 						</div>
 						<div class="field is-grouped">
-							<button type="submit" class="ui yellow button">Жду звонка</button>
+							<button type="submit" class="ui yellow button" name='counting'>Жду звонка</button>
 						</div>
 					</div>
 				</form>
 			</div>
+			<div id="popup3" style="display: none" class="fancyPopup">
+				<form action="send.php" method="post" id="form" class="form">
+					<div class="ui form">
+						<div class="field">
+							<div class="control">
+								<input
+									class="input _req"
+									type="text"
+									placeholder="Имя"
+									id="username"
+									name="userName"
+									required
+
+								/>
+								<small>Error message</small>
+							</div>
+						</div>
+						<div class="field">
+							<div class="control">
+								<input class="input _req" type="text" id="phoneNumber" name="phoneNumber" />
+								<small>Error message</small>
+							</div>
+						</div>
+						<div class="field is-grouped">
+							<button type="submit" class="ui yellow button" name="testing">Жду звонка</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div id="popup4" style="display: none" class="fancyPopup">
+				<form action="send.php" method="post" id="form" class="form">
+					<div class="ui form">
+						<div class="field">
+							<div class="control">
+								<input
+									class="input _req"
+									type="text"
+									placeholder="Имя"
+									id="username"
+									name="userName"
+									required
+
+								/>
+								<small>Error message</small>
+							</div>
+						</div>
+						<div class="field">
+							<div class="control">
+								<input class="input _req" type="text" id="phoneNumber" name="phoneNumber" />
+								<small>Error message</small>
+							</div>
+						</div>
+						<div class="field is-grouped">
+							<button type="submit" class="ui yellow button" name="legal">Жду звонка</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div id="popup5" style="display: none" class="fancyPopup">
+				<form action="send.php" method="post" id="form" class="form">
+					<div class="ui form">
+						<div class="field">
+							<div class="control">
+								<input
+									class="input _req"
+									type="text"
+									placeholder="Имя"
+									id="username"
+									name="userName"
+									required
+
+								/>
+								<small>Error message</small>
+							</div>
+						</div>
+						<div class="field">
+							<div class="control">
+								<input class="input _req" type="text" id="phoneNumber" name="phoneNumber" />
+								<small>Error message</small>
+							</div>
+						</div>
+						<div class="field is-grouped">
+							<button type="submit" class="ui yellow button" name="court">Жду звонка</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div id="popup6" style="display: none" class="fancyPopup">
+				<form action="send.php" method="post" id="form" class="form">
+					<div class="ui form">
+						<div class="field">
+							<div class="control">
+								<input
+									class="input _req"
+									type="text"
+									placeholder="Имя"
+									id="username"
+									name="userName"
+									required
+
+								/>
+								<small>Error message</small>
+							</div>
+						</div>
+						<div class="field">
+							<div class="control">
+								<input class="input _req" type="text" id="phoneNumber" name="phoneNumber" />
+								<small>Error message</small>
+							</div>
+						</div>
+						<div class="field is-grouped">
+							<button type="submit" class="ui yellow button" name="price">Жду звонка</button>
+						</div>
+					</div>
+				</form>
+			</div> 
 		</div>
 		<script src="node_modules/jquery/dist/jquery.min.js"></script>
-		<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-		<!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script> -->
 		<script src="js/mmenu.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 		<script src="js/main.js"></script>
