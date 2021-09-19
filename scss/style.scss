@@ -673,7 +673,9 @@ body {
 .fancyPopup{
 	border-radius: 4px;
 	width:350px;
+
 	.ui.form{
+		position: relative;
 		.field{
 			font-size: 17px;
 			font-family: 'Open Sans';
@@ -683,7 +685,7 @@ body {
 					visibility:hidden;
 				}
 			}
-			.control.error{
+			.control._error{
 				input{
 					border-color:#e74c3c;
 				}	
@@ -704,7 +706,22 @@ body {
 				}
 			}
 		}
-
+	}
+	#form:after{
+		position: absolute;
+		content:"";
+		left:0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgb(0, 0, 0, 0.5) url(../img/loading.gif) center / 80px no-repeat;
+		opacity:0;
+		visibility: hidden;
+		transition: all 0.5s ease 0s;		
+	}
+	#form._sending:after{
+		opacity:1;
+		visibility:visible;
 	}
 }
 

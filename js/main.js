@@ -1,47 +1,66 @@
-const form = document.getElementById('form');
-const username = document.getElementById('username');
-const phoneNumber = document.getElementById('phoneNumber');
+/* 
+document.addEventListener('DOMContentLoaded', function(){
+	const form = document.getElementById('form')
+	form.addEventListener('submit', formSend)
+
+	async function formSend(e){
+		e.preventDefault()
+
+		let error = formValidate(form)
+
+		let formData = new FormData(form)
 
 
-let arr = []
+		if(error === 0){
+			form.classList.add('_sending')
+			let response = await fetch('send.php',{
+				method:'POST',
+				body:formData
+			})
+			if(response.ok){
+				let result = await response.json();
+				alert(result.message)
+				formPreview.innerHTML = ''
+				form.reset()
+				form.classList.remove('_sending')	
+			}else{
+				alert('ERROR')
+				form.classList.remove('_sending')	
+			}
+		}
+		
+	}
 
-showSuccess = (input) =>{   
-    const inputParent = input.parentElement
-    inputParent.classList.remove('error')
+	function formValidate(form){
+		let error = 0
+		let formReq = document.querySelectorAll('._req')
+
+		for(let i=0; i< formReq.length; i++){
+			const input = formReq[i]
+			formRemoveError(input)
+
+			if(input.value === ''){
+				formAddError(input)
+				error++;
+			}
+			
+		}	
+		return error	
+
+	}
+
+
+	formAddError = (input)=>{
+		input.parentElement.classList.add('_error')
+		// input.classList.add('_error')
+	}
+	formRemoveError = (input)=>{
+		input.parentElement.classList.remove('_error')
+		// input.classList.remove('_error')
+	}
+})    
    
-    
-
-    arr = input.value
-    console.log(arr)
-  
-}
-
-
-showError = (input, message) => {
-	const inputParent = input.parentElement;
-	inputParent.classList.add('error');
-	const small = inputParent.querySelector('small');
-	small.innerText = message;
-};
-
-const checkInputs = (inputArray) => {
-	inputArray.forEach((input) => {
-		input.value.trim() === ''
-			? showError(input, 'Заполните поле')
-			: showSuccess(input);
-	});
-};
-
-form.addEventListener('submit', (e) => {
-	e.preventDefault();
-
-	checkInputs([username, phoneNumber]);
-
-    
-   
-
-});
 
 
 
-
+ */

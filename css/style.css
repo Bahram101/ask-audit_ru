@@ -585,6 +585,9 @@ body {
   border-radius: 4px;
   width: 350px;
 }
+.fancyPopup .ui.form {
+  position: relative;
+}
 .fancyPopup .ui.form .field {
   font-size: 17px;
   font-family: "Open Sans";
@@ -593,10 +596,10 @@ body {
   color: #e74c3c;
   visibility: hidden;
 }
-.fancyPopup .ui.form .field .control.error input {
+.fancyPopup .ui.form .field .control._error input {
   border-color: #e74c3c;
 }
-.fancyPopup .ui.form .field .control.error small {
+.fancyPopup .ui.form .field .control._error small {
   visibility: visible;
 }
 .fancyPopup .ui.form .field button.yellow {
@@ -610,6 +613,23 @@ body {
 .fancyPopup .ui.form .field button.yellow:active {
   position: relative;
   top: 1px;
+}
+.fancyPopup #form:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5) url(../img/loading.gif) center/80px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.fancyPopup #form._sending:after {
+  opacity: 1;
+  visibility: visible;
 }
 
 /**************************MEDIA QUERIES***************************/
