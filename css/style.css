@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
 @font-face {
   font-family: "Charter";
   font-style: normal;
@@ -135,6 +136,10 @@ body {
   border-right: 1px solid #ffe14a;
   margin-right: 13px;
   padding-right: 13px;
+}
+.header .header__top .header__top-container .header__top-right .header__instaIcon {
+  position: relative;
+  top: -3px;
 }
 .header .header__content {
   background: url("../img/header-img.webp");
@@ -321,23 +326,23 @@ body {
   outline: none;
 }
 .section .auditingServices {
-  background-image: url(../img/desktop/01.png);
+  background-image: url(../img/desktop/01.webp);
 }
 .section .countingServices {
-  background-image: url(../img/desktop/02.png);
+  background-image: url(../img/desktop/02.webp);
   background-position: center right !important;
 }
 .section .testingServices {
-  background-image: url(../img/desktop/03.png);
+  background-image: url(../img/desktop/03.webp);
 }
 .section .legalServices {
-  background-image: url(../img/desktop/04.png);
+  background-image: url(../img/desktop/04.webp);
 }
 .section .economicExpertise {
-  background-image: url(../img/desktop/05.png);
+  background-image: url(../img/desktop/05.webp);
 }
 .section .appraisalServices {
-  background-image: url(../img/desktop/06.png);
+  background-image: url(../img/desktop/06.webp);
 }
 
 .ourExperts {
@@ -614,7 +619,7 @@ body {
   position: relative;
   top: 1px;
 }
-.fancyPopup #form:after {
+.fancyPopup #form::after {
   position: absolute;
   content: "";
   left: 0;
@@ -627,7 +632,7 @@ body {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
-.fancyPopup #form._sending:after {
+.fancyPopup #form._sending::after {
   opacity: 1;
   visibility: visible;
 }
@@ -775,10 +780,11 @@ body {
     font-family: Charter;
   }
 
-  .header__content-text h1 {
-    font-size: 34px !important;
+  .header__content-text .center-text h1 {
+    font-size: 27px !important;
+    line-height: 44px !important;
   }
-  .header__content-text h4 {
+  .header__content-text .center-text h4 {
     font-size: 18px !important;
   }
 
@@ -812,6 +818,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     background: white;
+    opacity: 0.9 !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

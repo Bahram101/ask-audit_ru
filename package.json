@@ -10,7 +10,7 @@
     "license": "ISC",
     "dependencies": {
         "bootstrap": "^5.1.0",
-        "imask": "^6.2.2",
+        "inputmask": "^5.0.6",
         "jquery": "^3.6.0",
         "mmenu-light": "^3.0.9",
         "normalize.css": "^8.0.1",

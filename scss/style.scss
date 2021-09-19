@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
 @font-face {
 	font-family: 'Charter';
 	font-style: normal;
@@ -187,11 +189,15 @@ body {
 					margin-right: 13px;
 					padding-right: 13px;
 				}
+				.header__instaIcon{
+					position: relative;
+					top:-3px;
+				}
 			}
 		}
 	}
 	.header__content {
-		// background: url('../img/header-img.webp');
+		background: url('../img/header-img.webp');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center top;
@@ -360,8 +366,8 @@ body {
 					background:$yellow !important;
 				}
 			}
-			
-			
+
+
 		}
 		form.section__form {
 			input {
@@ -387,26 +393,26 @@ body {
 			// 	font-weight: 600;
 			}
 		}
-	
+
 
 	.auditingServices {
-		background-image: url(../img/desktop/01.png);
+		background-image: url(../img/desktop/01.webp);
 	}
 	.countingServices {
-		background-image: url(../img/desktop/02.png);
+		background-image: url(../img/desktop/02.webp);
 		background-position: center right !important;
 	}
 	.testingServices {
-		background-image: url(../img/desktop/03.png);
+		background-image: url(../img/desktop/03.webp);
 	}
 	.legalServices {
-		background-image: url(../img/desktop/04.png);
+		background-image: url(../img/desktop/04.webp);
 	}
 	.economicExpertise {
-		background-image: url(../img/desktop/05.png);
+		background-image: url(../img/desktop/05.webp);
 	}
 	.appraisalServices {
-		background-image: url(../img/desktop/06.png);
+		background-image: url(../img/desktop/06.webp);
 	}
 }
 
@@ -688,10 +694,10 @@ body {
 			.control._error{
 				input{
 					border-color:#e74c3c;
-				}	
+				}
 				small{
 					visibility:visible;
-				}			
+				}
 			}
 			button.yellow{
 				width:100%;
@@ -717,7 +723,7 @@ body {
 		background: rgb(0, 0, 0, 0.5) url(../img/loading.gif) center / 80px no-repeat;
 		opacity:0;
 		visibility: hidden;
-		transition: all 0.5s ease 0s;		
+		transition: all 0.5s ease 0s;
 	}
 	#form._sending::after{
 		opacity:1;
@@ -891,12 +897,16 @@ body {
 		font-family: $charter;
 	}
 	.header__content-text {
-		h1 {
-			font-size: 34px !important;
+		.center-text{
+			h1 {
+				font-size: 27px !important;
+				line-height: 44px !important;
+			}
+			h4 {
+				font-size: 18px !important;
+			}
 		}
-		h4 {
-			font-size: 18px !important;
-		}
+
 	}
 	.header__top {
 		.header__top-right {
@@ -922,6 +932,7 @@ body {
 				text-align: center;
 				display: flex;
 				background: white;
+				opacity:0.9 !important;
 				justify-content: center;
 				color: $blue;
 				padding: 15px;
