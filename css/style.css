@@ -74,6 +74,10 @@ a:hover {
   margin-left: 15px;
 }
 
+.yellowBtn.bannerBtn{
+  margin-left:0 !important;
+}
+
 form.section__form input {
   border: none;
   border-bottom: 1px solid #272b33;
@@ -639,7 +643,7 @@ body {
 
 /**************************MEDIA QUERIES***************************/
 @media (min-width: 992px) {
-  .vacancy-content button.bottom {
+  .vacancy__content button.bottom {
     display: none !important;
   }
 }
